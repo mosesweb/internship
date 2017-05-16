@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="customActionAddErrand"
+    GroupId = "SiteActions"
+    Location="Microsoft.SharePoint.StandardMenu"
+    RootWebOnly = "TRUE"
+    Sequence="1000"
+    Title="Nytt Ärende"
+    >
+    <UrlAction Url="javascript:popupCreateErrand();"/>
+  </CustomAction>
+  <CustomAction
+  Id="customActionAddCustomer"
+  GroupId = "SiteActions"
+  Location="Microsoft.SharePoint.StandardMenu"
+  RootWebOnly = "TRUE"
+  Sequence="1001"
+  Title="Ny Kund"
+    >
+    <UrlAction Url="javascript:popupCreateCustomer();"/>
+  </CustomAction>
+</Elements>
